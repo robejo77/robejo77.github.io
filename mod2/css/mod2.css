@@ -3,28 +3,63 @@
     src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
   }
 
+/*  SECTIONS  */
+.row {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+   
+}
+section {
+    background-color: grey;
+    border: 1px solid;
+}
+section title {
+    display: block;
+    background-color: firebrick;
+    color: white;
+    float: right;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID */
+.size1 { width: 100%; }
+.size2 { width: 66.13%; }
+.size3 { width: 32.26%; }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    .col {  margin: 1% 0 1% 0%; }
+	section { width: 100%; }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+    section{
+        width: 66.13%;
+    }
+    .row:last-child {
+        width: 100%;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     section{
-        margin: 5px;
-        width: 33%;
-        background-color: dimgray;
-        border: 1px solid;
+        width: 32.26%;
     }
-    section title {
-        background-color: firebrick;
-        color: white;
-        float: right;
-    }
+
 }
