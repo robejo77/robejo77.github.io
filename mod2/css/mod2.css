@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+  }
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    section{
+        margin: 5px;
+        width: 33%;
+        background-color: dimgray;
+        border: 1px solid;
+    }
+    section title {
+        background-color: firebrick;
+        color: white;
+        float: right;
+    }
+}
