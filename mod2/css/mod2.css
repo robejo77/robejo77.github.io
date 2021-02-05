@@ -3,16 +3,20 @@
     src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
   }
 
+.cntr {
+    text-align: center;
+}
+
 /*  SECTIONS  */
 .row {
 	clear: both;
 	padding: 0px;
-	margin: 0px;
-   
+	margin: 0px;  
 }
 section {
     background-color: grey;
     border: 1px solid;
+    padding: 1%;
 }
 section title {
     display: block;
@@ -25,9 +29,9 @@ section title {
 .col {
 	display: block;
 	float:left;
-	margin: 1% 0 1% 1.6%;
+	margin: 1% 0 1% .5%;
 }
-.col:first-child { margin-left: 0; }
+
 
 /*  GROUPING  */
 .group:before,
@@ -35,31 +39,32 @@ section title {
 .group:after { clear:both;}
 .group { zoom:1; /* For IE 6/7 */ }
 
-/*  GRID */
-.size1 { width: 100%; }
-.size2 { width: 66.13%; }
-.size3 { width: 32.26%; }
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) and (max-width: 767px)  {
     .col {  margin: 1% 0 1% 0%; }
 	section { width: 100%; }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px){
     section{
-        width: 66.13%;
+        width: 47%;
     }
-    .row:last-child {
-        width: 100%;
+    section:nth-child(2) {
+        float: right;
+    }
+    section:last-child {
+        width: 97.4%;
+        margin: 1% 1% 1% .5%;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     section{
-        width: 32.26%;
+        width: 30%;
     }
 
 }
