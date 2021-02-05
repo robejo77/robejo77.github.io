@@ -18,12 +18,15 @@ section {
     border: 1px solid;
     padding: 0 0 1% 1%;
 }
-section title {
-    padding: 5px;
-    display: block;
-    background-color: firebrick;
+section header {
+    width: 100%;
+    display: inline-block;
     color: white;
-    float: right;
+}
+section header .title {
+    float: right;    
+    background-color: firebrick;
+    padding: 7px;
 }
 section p {
     padding-right: 10px;
