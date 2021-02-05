@@ -21,13 +21,20 @@ section {
 section header {
     width: 100%;
     display: inline-block;
+    text-transform: uppercase;
     color: white;
 }
 section header .title {
     float: right;    
-    background-color: firebrick;
     padding: 7px;
+    width: 150px;
+    text-align: center;
 }
+
+section header #chicken { background-color: rgb(165, 121, 0);}
+section header #beef { background-color: rgb(75, 55, 0);}
+section header #sushi { background-color: rgb(0, 44, 15);}
+
 section p {
     padding-right: 10px;
 }
