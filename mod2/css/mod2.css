@@ -15,7 +15,7 @@
 }
 section {
     background-color: grey;
-    border: 1px solid;
+    border: 1px solid black;
     padding: 0 0 1% 1%;
 }
 section header {
@@ -28,6 +28,7 @@ section header .title {
     float: right;    
     padding: 7px;
     width: 150px;
+    border: 1px solid black;
     text-align: center;
 }
 
