@@ -16,13 +16,17 @@
 section {
     background-color: grey;
     border: 1px solid;
-    padding: 1%;
+    padding: 0 0 1% 1%;
 }
 section title {
+    padding: 5px;
     display: block;
     background-color: firebrick;
     color: white;
     float: right;
+}
+section p {
+    padding-right: 10px;
 }
 
 /*  COLUMN SETUP  */
