@@ -1,11 +1,30 @@
 @font-face {
     font-family: 'Roboto', sans-serif;
     src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
-  }
+}
+
+.card{
+    background-color: lightgrey; 
+}
+@media only screen and (max-width: 577px) {
+   .card{
+       margin: 0 15px;
+   } 
+}
+
+@media only screen and (min-width: 768px) {
+    .card {
+        flex: 1 0 0%;
+        margin-right: 15px;
+        margin-bottom: 0;
+        margin-left: 15px;  
+    }
+}
 
 nav {
     background-color: #00518b;
 }
+
 nav #collapsibleNavId {
     background-color: #ffffff80;
 }
